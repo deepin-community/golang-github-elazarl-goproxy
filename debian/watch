@@ -1,0 +1,4 @@
+version=4
+opts="dversionmangle=s/\+dfsg\d*$//, repacksuffix=+dfsg, \
+      mode=git, pgpmode=none, pretty=1.1+git%cd.%h" \
+  https://github.com/elazarl/goproxy.git HEAD
