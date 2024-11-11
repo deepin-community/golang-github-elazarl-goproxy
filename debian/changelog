@@ -1,5 +1,62 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-elazarl-goproxy (1.1+git20240726.8b0c205+dfsg-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 1.1+git20240726.8b0c205+dfsg.
+  * Update debian/gbp.conf.
+  * Add myself as an uploader.
+  * Run wrap-and-sort -a.
+  * Add golang-golang-x-net-dev to Build-Depends and Depends fields.
+  * Update packaging copyright.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Francisco Vilmar Cardoso Ruviaro <vilmar@debian.org>  Sat, 17 Aug 2024 15:56:44 +0000
+
+golang-github-elazarl-goproxy (1.1+git20231117.7cc037d+dfsg-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add builddirectory dh parameter.
+  * Add override_dh_auto_configure target. (Closes: #1072068)
+
+ -- Francisco Vilmar Cardoso Ruviaro <vilmar@debian.org>  Tue, 04 Jun 2024 19:41:34 +0000
+
+golang-github-elazarl-goproxy (1.1+git20231117.7cc037d+dfsg-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Team upload.
+  * Set upstream metadata fields: Bug-Database,
+    Bug-Submit, Repository, Repository-Browse.
+  * Use secure URI in Homepage field.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.6.1, no changes needed.
+
+  [ Francisco Vilmar Cardoso Ruviaro ]
+  * New upstream git snapshot version 1.1+git20231117.7cc037d+dfsg.
+    (Closes: #1042474, CVE-2023-37788)
+  * Change Section from devel to golang.
+  * Update Maintainer email.
+  * Update debian/watch.
+  * Set "Rules-Requires-Root: no".
+
+ -- Francisco Vilmar Cardoso Ruviaro <vilmar@debian.org>  Tue, 14 May 2024 16:53:43 +0000
+
+golang-github-elazarl-goproxy (1.1-1) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Dmitry Smirnov ]
+  * New upstream release
+  * DH to version 12
+  * golang-go --> golang-any
+  * Testsuite: autopkgtest-pkg-go
+  * Enabled tests; Build-Depends += "curl"
+  * Priority: optional; Standards-Version: 4.4.1
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sat, 28 Dec 2019 09:39:54 +1100
+
+golang-github-elazarl-goproxy (1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #819038).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 24 Mar 2016 02:28:33 +1100

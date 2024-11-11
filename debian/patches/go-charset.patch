@@ -1,0 +1,21 @@
+Last-Update: 2016-03-23
+Forwarded: https://github.com/onlyjob/goproxy/commit/dbed72b03ab40d06c1a8e4ed4227540e4af08700
+Bug-Upstream: https://github.com/elazarl/goproxy/issues/134
+Author: Dmitry Smirnov <onlyjob@member.fsf.org>
+Description: update go-charset namespace.
+
+--- a/ext/html/html.go
++++ b/ext/html/html.go
+@@ -9,10 +9,10 @@
+ 	"net/http"
+ 	"strings"
+ 
+ 	"github.com/elazarl/goproxy"
+-	"github.com/rogpeppe/go-charset/charset"
+-	_ "github.com/rogpeppe/go-charset/data"
++	"github.com/paulrosania/go-charset/charset"
++	_ "github.com/paulrosania/go-charset/data"
+ )
+ 
+ var IsHtml goproxy.RespCondition = goproxy.ContentTypeIs("text/html")
+ 
